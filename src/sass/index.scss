@@ -1,2 +1,23 @@
-@import './common';
-@import './example';
+//BASE//ОСНОВНІ НАЛАШТУВАННЯ
+@import './base/common';
+@import './base/container';
+
+//UTILS//УТИЛІТИ
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+//LAYOUT//СЕКЦІЇ
+@import './layout/hero-header';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/footer';
+
+//COMPONENTS//КОМПОНЕНТИ
+@import './components/modal-form';
+@import './components/buttons';
+@import './components/mobile_open_burger';
+@import './components/tablet_open_burger';
