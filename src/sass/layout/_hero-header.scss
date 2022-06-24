@@ -1,0 +1,13 @@
+.hero-header {
+  &__title {
+    font-family: var(--titan-one-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--main-rose-color);
+    background-color: var(--background-text-green);
+  }
+}
