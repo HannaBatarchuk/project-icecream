@@ -1,13 +1,35 @@
-.hero-header {
+.hero {
+  width: 100%;
+  // height: 502px;
+  background-position: center;
+  background-color: var(--secondary-rose-color);
+
   &__title {
     font-family: var(--titan-one-font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
-    line-height: 1.15;
+    line-height: 30px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--main-rose-color);
-    background-color: var(--background-text-green);
+    color: var(--main-white-color);
+    width: 218px;
+    height: auto;
+    margin-left: 20px;
+
+    &--pink {
+      font-size: 48px;
+      line-height: 0.96;
+      text-transform: uppercase;
+      color: var(--main-rose-color);
+    }
   }
+}
+
+.header {
+  width: 100%;
+  height: 58px;
+}
+.logo {
+  padding-top: 8px;
 }
