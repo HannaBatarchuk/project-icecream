@@ -1,23 +1,21 @@
-//BASE//ОСНОВНІ НАЛАШТУВАННЯ
-@import './base/common';
-@import './base/container';
+@import './common';
+@import './utils/vars';
+@import './utils/reset';
+@import './utils/mixins';
 
-//UTILS//УТИЛІТИ
-@import './utils/variables';
-@import './utils/visually-hidden';
+@import './utils/container';
 
-//LAYOUT//СЕКЦІЇ
-@import './layout/hero-header';
-@import './layout/products';
-@import './layout/about';
-@import './layout/advantages';
-@import './layout/gallery';
-@import './layout/customer-reviews';
-@import './layout/contacts';
-@import './layout/footer';
+// CSS файли для секцій сторінки
 
-//COMPONENTS//КОМПОНЕНТИ
-@import './components/modal-form';
-@import './components/buttons';
-@import './components/mobile_open_burger';
-@import './components/tablet_open_burger';
+@import './layouts/hero-header';
+@import './layouts/customer-reviews';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/gallery';
+@import './layouts/contacts';
+@import './layouts/footer';
+
+// components
+@import './components/modals';
+@import './components/mob-menu';

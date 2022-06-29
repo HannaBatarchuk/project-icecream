@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< Updated upstream
     <link rel="icon" href="images/favicon/favicon.ico" />
+=======
+    <link rel="icon" href="./images/favicon/Grouplogo.png" />
+>>>>>>> Stashed changes
     <title>IceCream Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,16 +24,51 @@
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
-  <body>
-    <include src="./partials/hero-header.html"></include>
+
+  <body class="page">
+    <include src="./partials/hero-header.html"> </include>
     <main>
-      <include src="./partials/products.html"></include>
-      <include src="./partials/about.html"></include>
-      <include src="./partials/advantages.html"></include>
-      <include src="./partials/gallery.html"></include>
-      <include src="./partials/customer-reviews.html"></include>
-      <include src="./partials/contacts.html"></include>
+      <include src="./partials/products.html"> </include>
+
+      <include src="./partials/about.html"> </include>
+
+      <include src="./partials/advantages.html"> </include>
+
+      <include src="./partials/gallery.html"> </include>
+
+      <include src="./partials/customer-reviews.html"> </include>
+
+      <include src="./partials/contacts.html"> </include>
     </main>
-    <include src="./partials/footer.html"></include>
+
+    <include src="./partials/footer.html"> </include>
+    <include src="./partials/modals.html"></include>
+
+    <!-- scroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <!-- Initialize Scroll -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#scroll-menu').on('click', "a[href^='#']", function (event) {
+          event.preventDefault();
+          var id = $(this).attr('href'),
+            top = $(id).offset().top;
+          $('body,html').animate({ scrollTop: top }, 1500);
+        });
+        $('#scroll-menu2').on('click', "a[href^='#']", function (event) {
+          event.preventDefault();
+          var id = $(this).attr('href'),
+            top = $(id).offset().top;
+          $('body,html').animate({ scrollTop: top }, 1500);
+        });
+        $('#scroll-menu3').on('click', 'a', function (event) {
+          event.preventDefault();
+          var id = $(this).attr('href'),
+            top = $(id).offset().top;
+          $('body,html').animate({ scrollTop: top }, 1500);
+        });
+      });
+    </script>
   </body>
 </html>
